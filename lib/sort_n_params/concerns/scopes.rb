@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 require 'active_support/concern'
 
 module SortNParams
@@ -9,7 +7,7 @@ module SortNParams
       def sorting_order(ordering_array, table_name = nil)
         return all if ordering_array.blank?
 
-        all.order(sanitize_sql_for_order(parse_array(ordering_array, table_name)))
+        all.order(parse_array(ordering_array, table_name))
       end
 
       def parse_array(ordering_array, table_name = nil)
