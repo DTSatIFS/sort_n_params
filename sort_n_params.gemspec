@@ -32,7 +32,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency "rake", ">= 12.3.3"
   s.add_development_dependency "rspec", "~> 3.0"
 
-  s.add_dependency(%q<rails>.freeze, [">= 5.0"])
+  s.add_dependency(%q<rails>.freeze, ["< 8.0"])
   s.add_dependency(%q<nokogiri>.freeze, [">= 1.18.9"])
   s.add_dependency(%q<rake>.freeze, [">= 12.3.3"])
 end
