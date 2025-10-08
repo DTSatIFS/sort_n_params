@@ -30,7 +30,7 @@ RSpec.describe SortNParams::Scopes do
       subject { test_class.sorting_order(%w[test_field asc]) }
 
       it 'builds an order with that field and direction' do
-        expect(subject.explain).to include('ORDER BY custom_tables.test_field asc')
+        expect(subject.explain.first).to include('ORDER BY custom_tables.test_field asc')
       end
     end
 
@@ -38,7 +38,7 @@ RSpec.describe SortNParams::Scopes do
       subject { test_class.sorting_order(%w[test_field desc]) }
 
       it 'builds an order with that field and direction' do
-        expect(subject.explain).to include('ORDER BY custom_tables.test_field desc')
+        expect(subject.explain.first).to include('ORDER BY custom_tables.test_field desc')
       end
     end
   end

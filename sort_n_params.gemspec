@@ -28,16 +28,16 @@ Gem::Specification.new do |s|
   s.required_ruby_version = Gem::Requirement.new('>= 2.6.0')
 
   s.add_development_dependency 'bundler'
-  s.add_development_dependency 'factory_bot', '~> 4.0'
-  s.add_development_dependency 'pry', '~> 0.13.1'
+  s.add_development_dependency 'factory_bot', '~> 6.5', '>= 6.5.5'
+  s.add_development_dependency 'pry'
   s.add_development_dependency 'pry-byebug'
-  s.add_development_dependency 'rake', '>= 12.3.3'
-  s.add_development_dependency 'rspec', '~> 3.0'
+  s.add_development_dependency 'rake'
+  s.add_development_dependency 'rspec'
   s.add_development_dependency 'rubocop', '~> 1.30'
   s.add_development_dependency 'rubocop-rails'
-  s.add_development_dependency 'sqlite3'
+  s.add_development_dependency 'sqlite3', '~> 2.7', '>= 2.7.4'
 
   s.add_dependency('nokogiri', ['>= 0'])
-  s.add_dependency('rails', ['>= 7.0'])
-  s.add_dependency('rake', ['>= 12.3.3'])
+  s.add_dependency('rails', ['>= 8.0'])
+  s.add_dependency('rake', ['>= 13.3'])
 end
